@@ -24,10 +24,10 @@ int main()
 	printf("Valor da variavel decimal APOS a modificacao: %.2f\n\n", decimal);
 
 	printf("Valor da variavel caractere ANTES da modificacao: %c\n", caractere);
-	ponteiroCaractere = &caractere;
-	*ponteiroCaractere = 'G';
+	ponteiroCaractere = &caractere; // ponteiroCaractere aponta para caractere
+	*ponteiroCaractere = 'G'; // Altera o valor da variavel caractere
 	printf("Valor da variável caractere APOS a modificacao: %c\n\n", caractere);
 
-	system("pause");
+	getchar();
 	return 0;
 }
