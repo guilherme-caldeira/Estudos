@@ -9,19 +9,24 @@ constexpr auto RU = 2547518;
 
 int main()
 {
-	int inteiro = 18, *ponteiroInteiro;
-	float decimal = 75.18, *ponteiroDecimal;
-	// char caractere, * ponteiroCaractere;
+	int inteiro = 0, *ponteiroInteiro;
+	float decimal = 0.0, *ponteiroDecimal;
+	char caractere = 'A', *ponteiroCaractere;
 
 	printf("Valor da variavel inteiro ANTES da modificacao: %d\n", inteiro);
 	ponteiroInteiro = &inteiro; // ponteiroInteiro aponta para inteiro
-	*ponteiroInteiro = 0; // Altera o valor da variavel inteiro
+	*ponteiroInteiro = 18; // Altera o valor da variavel inteiro
 	printf("Valor da variavel inteiro APOS a modificacao: %d\n\n", inteiro);
 
 	printf("Valor da variavel decimal ANTES da modificacao: %.2f\n", decimal);
 	ponteiroDecimal = &decimal; // ponteiroDecimal aponta para decimal
-	*ponteiroDecimal = 0.53; // Altera o valor da variavel decimal
+	*ponteiroDecimal = 75.18; // Altera o valor da variavel decimal
 	printf("Valor da variavel decimal APOS a modificacao: %.2f\n\n", decimal);
+
+	printf("Valor da variavel caractere ANTES da modificacao: %c\n", caractere);
+	ponteiroCaractere = &caractere;
+	*ponteiroCaractere = 'G';
+	printf("Valor da variável caractere APOS a modificacao: %c\n\n", caractere);
 
 	system("pause");
 	return 0;
